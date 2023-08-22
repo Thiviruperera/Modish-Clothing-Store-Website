@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnare</title>
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/questionnare.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/questionnarestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/imagezoom.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+
+</head>
+
+<body class="background">
+<header>
+        <div class="topMenu">
+            <div class="btns">
+                <a href="shop.html"><img src="images/store.png" class="storeBtn" alt="shoppingcart"></a>
+                <a href="form.html"><img src="images/form_.png" class="storeBtn" alt="webForm"></a>
+                <a href="#"><img src="images/contact.png" class="storeBtn" alt="contact"></a>
+            </div>
+            <img src="images/Logo.png" class="logo" alt="Logo">
+             <div class="search-container">
+                <form action="home.html">
+                    <input type="text" placeholder="Search.." id="searchInput" name="search">
+                </form>
+            </div>
+        </div>
+        
+        <nav>
+            
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="home.html"class="nav-links">Home</a></li>
+                <li class="nav-li"><a href="store.html"class="nav-links">Store</a></li>
+                <li class="nav-li"><a href="quiz.html"class="nav-links">Quiz</a></li>
+                <li class="nav-li"><a href="questionnare.html"class="nav-links">Questionnaire</a></li>
+            </ul>
+            <div class="dropdown">
+             <button class="dropbtn"><a class="dropbtn"> &nbsp; More</a></button>
+              <div class="dropdown-content">
+                  <a class="content" href="trends.html">Trends</a>
+                  <a class="content" href="clothes.html">Clothing</a>
+                  <a class="content" href="accessories.html">Accessories</a>
+                  <a class="content" href="hypebeast.html">Hypebeast</a>
+              </div>
+            </div>          
+        </nav>
+    </header>
+
+
+<div class="changecolor">
+    <div class="dropdown">
+        <button class="dropbtn">CHANGE COLOUR</button>
+        <div class="dropcontent">
+
+            BLUE:<input type="checkbox" class="contentt"  id="blue" onclick="changetoblue()">
+            RED:<input type="checkbox" class="contentt"  id="red" onclick="changetored()">
+            YELLOW:<input type="checkbox" class="contentt" id="yellow" onclick="changetoyellow()">
+            GREEN:<input type="checkbox" class="contentt"  id="green" onclick="changetogreen()">
+
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">CHANGE BACKGROUND COLOUR</button>
+        <div class="dropcontent">
+
+            BLUE:<input type="checkbox" class="contentt"  id="blue2" onclick="changetoblue1()">
+            RED:<input type="checkbox" class="contentt"  id="red2" onclick="changetored2()">
+            YELLOW:<input type="checkbox" class="contentt" id="yellow2" onclick="changetoyellow3()">
+            GREEN:<input type="checkbox" class="contentt"  id="green2" onclick="changetogreen4()">
+        </div>
+    </div>
+</div>
+
+
+
+
+<br>
+<div class="surveytitle">
+<h1 class="customersurveytitle textc"><b><u>MODISH - CUSTOMER SURVEY</u></b></h1>
+</div>
+<div align="left" class="survey">
+    <div class="surveyquestion">
+        <h3 class="question textc">Have you ever heard about MODISH ?</h3>
+    </div>
+<br>
+    <div class="allimg">
+        <img class="original"  src="questionnare_images/logopic.jpg" >
+        <img class="imgz"   src="questionnare_images/logopic.jpg" >
+        <h3 class="part1 textc">A STYLE FOR EVERYONE'S<br> STORY</h3>
+    </div>
+    <br>
+    <form>
+        <label class="container">YES
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">NO
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+
+    </form>
+</div>
+
+
+
+
+<br>
+<div align="left" class="survey">
+    <div class="surveyquestion">
+        <h3 class="question textc">Have you purchased any goods from our site before ?</h3>
+    </div>
+    <br>
+    <div class="allimg">
+        <img class="original"  src="questionnare_images/rolex.jpg">
+        <img class="imgz"   src="questionnare_images/rolex.jpg">
+        <h3 class="part2 textc">The Oyster Perpetual Sky-Dweller in<br> Yellow Rolesor with a champagne<br>colour dial and an Oyster bracelet.</h3>
+    </div>
+    <br>
+    <form>
+        <label class="container">YES
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">NO
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+    </form>
+</div>
+
+
+
+
+<br>
+<div align="left" class="survey">
+    <div class="surveyquestion">
+        <h3 class="question textc">Have often do you visit out website ?</h3>
+    </div>
+    <br>
+    <div class="allimg">
+        <img class="original"  src="questionnare_images/bags.jpg">
+        <img class="imgz"   src="questionnare_images/bags.jpg">
+        <h3 class="part3 textc">This rare version of the maxi flap<br> bag features the Timeless Classic<br> interlocking 'CC' logo at its flap<br> while the rest of the bag has a <br>quilted finish</h3>
+    </div>
+    <br>
+    <form>
+        <label class="container">Every time
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">Most often
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+
+        <label class="container">Rarely
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">Very Rarely
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+    </form>
+</div>
+
+
+
+<br>
+<div align="left" class="survey">
+    <div class="surveyquestion">
+        <h3 class="question textc">How long have you been our customer ?</h3>
+    </div>
+    <br>
+    <div class="allimg">
+        <img class="original"  src="questionnare_images/shoes.jpg">
+        <img class="imgz"   src="questionnare_images/shoes.jpg">
+        <h3 class="part4 textc">SANTIAG HARNESS BOOTS<br> Balenciaga Boots in light<br> brown suede leather<br> and shiny palladium hardware</h3>
+    </div><br>
+    <form>
+        <label class="container"> 1 Year
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">6 months
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">2 months
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">I'am new Here
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+    </form>
+</div>
+
+
+
+
+<br>
+<div align="left" class="survey">
+    <div class="surveyquestion">
+        <h3 class="question textc">Please specify your Gender.</h3>
+    </div>
+    <br>
+    <div class="allimg">
+        <img class="original"  src="questionnare_images/wallet.png">
+        <img class="imgz"  src="questionnare_images/wallet.png">
+        <h3 class="part5 textc">Meisterstück Urban Wallet<br> with Coin Case</h3>
+    </div><br>
+    <form>
+        <label class="container">Male
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+        <label class="container">Female
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label><br>
+
+        <label class="container">Do not want to Specify
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <br>
+        <br>
+       <input class="submit" type="submit" value="Submit">
+    </form>
+</div>
+<br>
+</body>
+
+
+<!--////////////////////////////////////////////     FOOTER NAVIGATION     ///////////////////////////////////////////////////////////////// -->
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3 class ="footerTitle">Page Editor</h3>
+            <p class="footer-links">
+                <a href="cv_sc_fernando.html">S.C Fernando </a>
+            </p>    
+    </div>
+
+    <div class="footer-middle_01">
+        <h3 class ="footerTitle">Team Members</h3>  
+            <p class="footer-links">Maneesha Walisundara </p>
+            <p class="footer-links">Gibran Kasif </p>
+            <p class="footer-links">Thiviru Perera</p>
+            <p class="footer-links">S.C Fernando </p>
+    </div>
+
+    <div class="footer-middle_02">
+        <h3 class ="footerTitle">Quick Links</h3>
+            <p class="footer-links">    
+                <a href="store.html">Store</a>
+            </p>
+
+            <p class="footer-links">    
+                <a href="quiz.html">Quiz</a>
+            </p>
+
+            <p class="footer-links">    
+                <a href="questionnare.htmk">Questionnaire</a>
+            </p>
+
+            <p class="footer-links">
+                <a href="mysvg.html">Sitemap</a>
+            </p>
+
+            <p class="footer-links">
+                <a href="students.html">Member Roles</a>
+            </p>
+
+    </div>
+
+
+    <div class="footer-right">
+        <h3 class ="footerTitle">Contact</h3>
+            <p class="footer-links">    
+                <a href="form.html">Contact Us</a>
+            </p>
+
+    </div>
+
+</footer>
+
+<!--////////////////////////////////////////////  END---   FOOTER NAVIGATION ---END    ///////////////////////////////////////////////////////////////// -->
+</html>

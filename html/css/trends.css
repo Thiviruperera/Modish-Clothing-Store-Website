@@ -1,0 +1,51 @@
+.grid-item-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-trends {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#trend{
+	width: 300px;
+	height:380px;
+	border-radius:30px; 
+	border-style: ridge;
+}
+.description {
+	font-family: 'Courier New';
+	font-size: 26px;
+	text-align: left;
+}
+#trendAlign {
+	text-align: left;
+}
+#topic {
+	text-align: center;
+	text-transform: uppercase;
+}
+.mainSeperator { 
+	height: 10px;
+	background-color: #323232;
+
+}
+#seperator { 
+	height: 2px;
+	background-color: #323232;
+
+}
+.seperator1 { 
+	margin-top: 180px;
+}
+.seperator2 { 
+	margin-top: 110px;
+}
+.seperator3 { 
+	margin-top: 180px;
+}
+.seperator4 { 
+	margin-top: 150px;
+}

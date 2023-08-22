@@ -1,0 +1,248 @@
+*{
+    font-family: 'Courier New';
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px 50px;
+}
+
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-weight:bold;
+  color: #000000;
+
+}
+.product{
+	width: 300px;
+	border:1px solid #5d5e5e;
+	border-radius:10px;
+	border-style: inset;
+	animation: fadeIn ease 2.5s;
+  -webkit-animation: fadeIn ease 2.5s;
+}
+
+.price{
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.add-to-cart {
+  background-color: lightgrey;
+  transition: all 0.5s ease-in-out;
+  opacity:0;
+  cursor:pointer;
+  text-align: center;
+}
+
+a{
+  color: purple; 
+
+  /*add to cart link / button text color*/
+}
+
+.grid-item:hover .cart1,
+.grid-item:hover .cart2,
+.grid-item:hover .cart3,
+.grid-item:hover .cart4,
+.grid-item:hover .cart5,
+.grid-item:hover .cart6{
+    bottom: 50px;
+    opacity: 1;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+/*Form Stuff*/
+.loginPage{
+  background-color: grey;
+}
+
+
+.userForm{
+  width: 500px;
+  padding: 30px;
+  background: #FFFFFF;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+.userForm h2{
+  background: #4D4D4D;
+  text-transform: uppercase;
+  color: #34CACA;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+
+.userForm input[type="text"],
+.userForm input[type="number"],
+.userForm select 
+{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px;
+  height: 45px;
+}
+
+.userForm input[type="button"], 
+.userForm input[type="submit"]{
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.userForm input[type="button"]:hover, 
+.userForm input[type="submit"]:hover {
+  background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+  background-color:#34CACA;
+}
+
+/*Cart Heading Stuff*/
+
+.itemContainer {
+  max-width: 700px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+} 
+
+.viewCart {
+  width:100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 5px solid lightgrey;
+  margin: 0 auto;
+}
+
+.itemTitle {
+  width:46%;
+}
+
+.priceTitle {
+  width:20%;
+  display: flex;
+  align-items: center;
+}
+
+.quantityTitle {
+  width:20%;
+  display: flex;
+  align-items: center;
+}
+
+.totalTitle {
+  width:10%;
+  display: flex;
+  align-items: center;
+}
+
+img{
+  width:40%;
+}
+
+/* items in cart*/
+
+.inCartItem {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+} 
+
+.wrapper {
+  width:100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 5px solid lightgrey;
+  margin: 0 auto;
+}
+
+.itemAndName {
+  width:45%;
+}
+
+.wrapper ion-icon{
+  font-size: 20px;
+  color: teal;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.price {
+  width:15%;
+  display: flex;
+  align-items: center;
+}
+
+.itemNumInCart {
+  width:20%;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+}
+
+
+.clearAllDisplay{
+  display:block;
+  margin-left: 420px;
+}
+
+.itemTot {
+  width:10%;
+  display: flex;
+  align-items: center;
+}
+
+
+.totDisplayContainer{
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+  padding: 10px 0;
+}
+
+.totDisplayTitle{
+  width:110px;
+}
+
+.totDisplay{
+  width:500px;
+}
+
+.buy{
+  padding-top: 15px;
+  margin-left:1000px;
+}
+

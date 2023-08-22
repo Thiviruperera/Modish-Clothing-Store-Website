@@ -1,0 +1,140 @@
+/*part B styles-----------------------------*/
+
+.centered{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topleft{
+position: absolute;
+  top:-4%;
+  left: 5%;
+
+}
+
+.sizee {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:90px;
+  font-family: "Courier New";
+}
+
+.mainimage{
+ filter: blur(8px);
+  -webkit-filter: blur(4px);
+
+}
+
+
+/*part B slide show images-----------------------------*/
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	height:250px;
+	margin: 0;
+	left: 0;
+	animation: 22s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+/*the learn more button css*/
+
+.learnmore {
+	background-color:transparent;
+	border:2px solid white;
+	display:inline-block;
+	color:white;
+	font-family:'Montserrat';
+	font-size:40px;
+	padding:6px 24px;
+	position:absolute;
+	top: 70%;
+    left: 40%;
+
+}
+.learnmore:hover {
+	background-color:transparent;
+}
+
+
+
+/*the h2 headers for the the sub titles */
+
+.allsubheaders{
+ position: relative;
+  text-align: center;
+  color: black;
+  font-size:40px;
+  font-family: "Montserrat";
+  text-align:left;
+
+}
+
+/*other fonts color change*/
+
+.divfill{
+background-color:#D3D3D3;
+
+}
+
+.divfill2{
+background-color:#808080;
+
+}
+
+
+.img1{
+ border-style: solid;
+ border-color:grey;
+  border-width:5px;
+
+}
+
+.paradesign{
+font-family:'Montserrat';
+letter-spacing: 2px;
+
+}
+footer{
+	overflow: hidden;
+}

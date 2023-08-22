@@ -1,0 +1,60 @@
+*{
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+body{
+	background-image: url("../index_images/stars.jpg")
+
+}
+
+#name li{
+	list-style-type: circle;
+	padding-top: 40px;
+}
+
+#ids li{
+	padding-top: 40px;
+}
+
+#header{
+	text-align: center;
+	font-size: 180%;
+}
+
+#container{
+	width: 800px;
+	height: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background-image: url('../index_images/sunset2.jpg');
+	background-size: 110% 200%;
+	color: #000000FF;
+}
+
+#content{
+	padding: 20px;	
+	font-size: 170%;
+	line-height: 2.9em;
+}
+
+#name{
+	float: left;
+}
+
+#ids {
+	float: right;
+	
+}
+
+#ids li {
+	list-style-type: none;
+}
+
+#footer{
+	clear: both;
+	padding: 10px;
+	text-align: right;
+	font-size: 100%
+}

@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+.container1{
+	width: 800px;
+	height: 200px;
+	margin: 100px auto;
+	background:#008080;
+	border-radius: 30px;
+	position:relative;
+	padding:10px;
+	
+}
+.container2{
+	width: 800px;
+	height: 425px;
+	margin: 100px auto;
+	background:#008080;
+	border-radius: 30px;
+	position:relative;
+	padding:10px;
+	
+}
+.container3{
+	width: 800px;
+	height: 250px;
+	margin: 100px auto;
+	background:#008080;
+	border-radius: 30px;
+	position:relative;
+	padding:10px;
+	
+}
+
+.container4{
+	width: 800px;
+	height: 500px;
+	margin: 100px auto;
+	background:#008080;
+	border-radius: 30px;
+	position:relative;
+	padding:10px;
+	
+}
+
+#topic {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size:55px;
+    
+}
+#img1{
+	margin-left: 140px;
+	width: 500px;
+	height: 280px;
+}
+#img2{
+	margin-left: 120px;
+	width: 400px
+	height:200px;
+	
+}
+h2 {
+    color:#59E4CA;
+	text-align:center;
+}
+
+p {
+    color:#59E4CA;
+}
+ol {
+    color:#59E4CA;
+}
+h1 {
+  text-shadow: 2px 2px #59E4CA;
+}

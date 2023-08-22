@@ -1,0 +1,84 @@
+
+.textOverImage{text-decoration:none;
+font-size: 15px;}
+
+.grid-img-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-row-gap: 50px;
+   grid-column-gap: 50px;
+  padding-left:155px;
+}
+.grid-item {
+	width: 300px;
+	margin-top: 25px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*CSS for the Image Formatting*/ 
+.textOverImage{
+	position:relative; 
+	width:300px;
+	height:300px;
+	float:left;
+	margin:4px;
+	color:#BBFFFF;
+	background-size:100%;
+	background-position:center;
+	transition:0.5s;
+	font-family: 'Montserrat';
+
+	}
+
+/*CSS for the Zoom Effect*/
+.textOverImage:hover{
+background-size:120%;
+}
+
+/*CSS for Adding Text over image*/
+.textOverImage:after{
+	position:absolute;
+	top:90%;
+	bottom:0;
+	left:0;
+	right:0;
+	white-space:pre-wrap;
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	padding:0 8px;
+	content:attr(data-text);
+	transition:0.5s;
+}
+
+/*CSS to Edit the after hover*/
+.textOverImage:hover:after{
+	top:0;
+	padding:8px;
+	background-color:rgba(0,0,0,0.6);
+}
+
+/*CSS to Make the Title*/
+.textOverImage:first-line{
+	color:#fff;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+
+
+
+#student1{
+	background-image:url(../students_images/Maneesha.jpg)
+}
+#student2{
+	background-image:url(../students_images/Gibran.jpg)
+}
+#student3{
+	background-image:url(../students_images/Thiviru.jpg)
+}
+#student4{
+	background-image:url(../students_images/Senesh.jpg)
+}

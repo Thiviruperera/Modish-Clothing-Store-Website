@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Courier New';
+    src: url('fonts/Courier New/Courier New.eot');
+    src: local('Courier New'), local('Courier New'),
+        url('fonts/Courier New/Courier New.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Courier New/Courier New.woff2') format('woff2'),
+        url('fonts/Courier New/Courier New.woff') format('woff'),
+        url('fonts/Courier New/Courier New.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	  background-color: 
+	  #eeeeee;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+/*Continue from here*/
+
+
+.customersurveytitle{
+color:#000C66;
+font-family:'Helvetica Neue',sans-serif;
+	font-size: 26px;
+	font-weight: heavy;
+
+}
+
+.survey{
+width: 35%;
+        padding: 20px;
+        background:#36454f ;
+
+}
+
+.surveyquestion{
+
+background:#4a6170 ;
+ width: 500px;
+  margin: auto;
+  border: 3px solid #296E85;
+   position: relative;
+    left: -30px;
+}
+
+.question{ font-family: 'Droid serif', serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 44px;
+          margin: 0 0 12px;
+          text-align: center;
+          color:white;
+          }
+
+
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:white;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #296E85;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/*submit button*/
+.submit {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*part B styles-----------------------------*/
+
+.centered{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topleft{
+position: absolute;
+  top: 8px;
+  left: 16px;
+
+}
+
+.sizee {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:90px;
+  font-family: "verdana";
+}
+
+.mainimage{
+ filter: blur(8px);
+  -webkit-filter: blur(3px);
+
+}
+
+
+/*part B slide show images-----------------------------*/
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	height:250px;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	
+</head>
+
+<body>
+<header>
+		<div class="topMenu">
+			<div class="btns">
+  				<a href="shop.html"><img src="images/store.png" class="storeBtn" alt="shoppingcart"></a>
+  				<a href="form.html"><img src="images/form_.png" class="storeBtn" alt="webForm"></a>
+  				<a href="#"><img src="images/contact.png" class="storeBtn" alt="contact"></a>
+  			</div>
+			<img src="images/Logo.png" class="logo" alt="Logo">
+			 <div class="search-container">
+	   			<form action="home.html">
+	   				<input type="text" placeholder="Search.." id="searchInput" name="search">
+    			</form>
+  			</div>
+		</div>
+		
+		<nav>
+			
+			<ul id="nav-ul">
+				<li class="nav-li"><a href="home.html"class="nav-links">Home</a></li>
+				<li class="nav-li"><a href="store.html"class="nav-links">Store</a></li>
+				<li class="nav-li"><a href="quiz.html"class="nav-links">Quiz</a></li>
+				<li class="nav-li"><a href="questionnare.html"class="nav-links">Questionnaire</a></li>
+			</ul>
+			<div class="dropdown">
+			 <button class="dropbtn"><a class="dropbtn"> &nbsp;	More</a></button>
+			  <div class="dropdown-content">
+				  <a class="content" href="trends.html">Trends</a>
+				  <a class="content" href="clothes.html">Clothing</a>
+                  <a class="content" href="accessories.html">Accessories</a>
+				  <a class="content" href="hypebeast.html">Hypebeast</a>
+			  </div>
+			</div>			
+		</nav>
+	</header>
+
+
+	<div class="form-container">
+		<div class="form-subcontainer">
+			<form name="feedbackForm" onsubmit="validateForm(event)" action="" method="get">
+				<h1>Contact Form</h1>
+				<h4>Please fill all entries.</h4>
+				<hr>
+				<label for="fname">First Name:</label>
+				<input class="formInput" type="text" name="firstName"id="fname" placeholder="Enter your first name">
+
+				<label for="lname">Last Name:</label>
+				<input class="formInput" type="text" name="lastName"id="lname" placeholder="Enter your last name">
+
+				<label for="email">Email:</label>
+				<input class="formInput" id="email" type="email" placeholder="Enter your email">
+
+				<p class="ratingLabel" for="star-rating star-5">Rating:</p>
+				<span class="star-rating star-5">
+					  <input name="star" type="radio" name="rating" value="very poor"><i></i>
+					  <input name="star" type="radio" name="rating" value="poor"><i></i>
+					  <input name="star" type="radio" name="rating" value="average"><i></i>
+					  <input name="star" type="radio" name="rating" value="good"><i></i>
+					  <input name="star" type="radio" name="rating" value="excellent"><i></i>
+					</span>
+				<br><br>
+
+
+				<label for="response">Comments:</label>
+   				<textarea id="response" name="response" placeholder="Enter your message."></textarea>
+   				<input class="formInput" id="formSubmit" type="submit" value="Submit">
+
+			</form>
+		</div>
+	</div>
+<script>
+	function validateForm(event) {
+
+		var firstName = document.getElementById("fname").value;
+		var lastName = document.getElementById("lname").value;
+		var email = document.getElementById("email").value;
+		var comment =  document.getElementById("response").value;
+		// var emailMatch = /^\[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Z]{2,4}$/;
+		var group = document.getElementsByName("star");
+		var selected = "";
+		var rate;
+		var error = false;
+		var errors = [];
+			for (var i=0; i< group.length; i++) {
+				if (group[i].checked){
+				  selected = group[i].value;
+				  break;
+				}
+			}
+
+			if (selected == "") {
+				errors.push("No rating is checked");
+				error = true;
+			}
+
+		    if (!firstName){
+		      errors.push("First name is required");
+		      error = true;
+		    }
+		    if (!lastName){
+		      errors.push("Last name is required");
+		      error = true;
+		    }
+		   
+		    if (!email){
+		      errors.push("The email is required.");
+		      error = true;
+		    } 
+		    if (errors.length) {
+		      event.preventDefault();
+		      alert(errors.join("\n"));
+		    }
+
+		    if (!error){
+			    var response = confirm( "Dear " +  firstName + " " + lastName +", thank you very much for the feedback. You have rated our website as "+ selected + " and your comment was " + comment);
+			}
+	}
+
+</script>
+
+
+</body>
+
+<!--////////////////////////////////////////////     FOOTER NAVIGATION     ///////////////////////////////////////////////////////////////// -->
+<footer class="footer-distributed">
+	<div class="footer-left">
+		<h3 class ="footerTitle">Page Editor</h3>
+			<p class="footer-links">
+				<a href="cv_gibran_kasif.html">Gibran Kasif </a>
+			</p>	
+	</div>
+
+	<div class="footer-middle_01">
+		<h3 class ="footerTitle">Team Members</h3>	
+			<p class="footer-links">Maneesha Walisundara </p>
+			<p class="footer-links">Gibran Kasif </p>
+			<p class="footer-links">Thiviru Perera</p>
+			<p class="footer-links">S.C Fernando </p>
+	</div>
+
+	<div class="footer-middle_02">
+		<h3 class ="footerTitle">Quick Links</h3>
+			<p class="footer-links">	
+				<a href="store.html">Store</a>
+			</p>
+
+			<p class="footer-links">	
+				<a href="quiz.html">Quiz</a>
+			</p>
+
+			<p class="footer-links">	
+				<a href="questionnare.html">Questionnaire</a>
+			</p>
+
+			<p class="footer-links">
+				<a href="mysvg.html">Sitemap</a>
+			</p>
+
+			<p class="footer-links">
+				<a href="students.html">Member Roles</a>
+			</p>
+
+	</div>
+
+
+	<div class="footer-right">
+		<h3 class ="footerTitle">Contact</h3>
+			<p class="footer-links">	
+				<a href="form.html">Contact Us</a>
+			</p>
+
+	</div>
+
+</footer>
+
+<!--////////////////////////////////////////////  END---   FOOTER NAVIGATION ---END    ///////////////////////////////////////////////////////////////// -->
+
+
+</html>

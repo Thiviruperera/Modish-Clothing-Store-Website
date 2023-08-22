@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home</title>
+
+</head>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
+		<script src="zoom.js"></script>
+<body>
+
+	<header>
+		<div class="topMenu">
+			<div class="btns">
+  				<a href="shop.html"><img src="images/store.png" class="storeBtn" alt="shoppingcart"></a>
+  				<a href="form.html"><img src="images/form_.png" class="storeBtn" alt="webForm"></a>
+  				<a href="#"><img src="images/contact.png" class="storeBtn" alt="contact"></a>
+  			</div>
+			<img src="images/Logo.png" class="logo" alt="Logo">
+			 <div class="search-container">
+	   			<form action="home.html">
+	   				<input type="text" placeholder="Search.." id="searchInput" name="search">
+    			</form>
+  			</div>
+		</div>
+		
+		<nav>
+			
+			<ul id="nav-ul">
+				<li class="nav-li"><a href="home.html"class="nav-links">Home</a></li>
+				<li class="nav-li"><a href="store.html"class="nav-links">Store</a></li>
+				<li class="nav-li"><a href="quiz.html"class="nav-links">Quiz</a></li>
+				<li class="nav-li"><a href="questionnare.html"class="nav-links">Questionnaire</a></li>
+			</ul>
+			<div class="dropdown">
+			 <button class="dropbtn"><a class="dropbtn"> &nbsp;	More</a></button>
+			  <div class="dropdown-content">
+				  <a class="content" href="trends.html">Trends</a>
+				  <a class="content" href="clothes.html">Clothing</a>
+                  <a class="content" href="accessories.html">Accessories</a>
+				  <a class="content" href="hypebeast.html">Hypebeast</a>
+			  </div>
+			</div>			
+		</nav>
+	</header>
+
+
+ 	<ul id="slides">
+	    <li class="slide showing"></li>
+	    <li class="slide"></li>
+	    <li class="slide"></li>
+	</ul>
+
+
+
+		<h1 id="mainTopic">Summer Deals</h1>
+		<hr class="seperator"></hr>	
+			
+
+		<div class="grid-container">
+			
+			<div class="grid-item"><img src="main_images/1.jpg" alt="item" class="product"><p>Halter maxi skater dress <br><span class="price">£85.00</span></p></div>
+			<div class="grid-item"><img src="main_images/2.jpg" alt="item"class="product"><p>Floral puff sleeve lace up dress<br><span class="price">£48.00</span></p></div>
+			<div class="grid-item"><img src="main_images/3.jpg" alt="item"class="product"><p>Barstow short sleeve shirt<br><span class="price">£30.00</span></p></div>  
+			<div class="grid-item"><img src="main_images/4.jpg"alt="item"class="product"><p>French connection check shirt<br><span class="price">£20.00</span></p></div>
+			<div class="grid-item"><img src="main_images/5.jpg"alt="item" class="product"><p>Cotton neck jumper in black<br><span class="price">£18.00</span> </p></div>
+			<div class="grid-item"><img src="main_images/6.jpg"alt="item" class="product"><p>Versace square sunglasses<br><span class="price">£193.00</span></p></div>  
+		</div>
+		
+	</div>
+<!-- //////////////SLIDESHOW ANIMATION SCRIPT////////////////////////////////////////////// -->
+	<script type="text/javascript">
+		
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,3000);
+
+		function nextSlide() {
+		    slides[currentSlide].className = 'slide';
+		    currentSlide = (currentSlide+1)%slides.length;
+		    slides[currentSlide].className = 'slide showing';
+		}
+
+	</script>
+<!-- /////////////SLIDESHOW ANIMATION SCRIPT///////////////////////////////////////////////// -->
+</body>
+
+<!--////////////////////////////////////////////     FOOTER NAVIGATION     ///////////////////////////////////////////////////////////////// -->
+<footer class="footer-distributed">
+	<div class="footer-left">
+		<h3 class ="footerTitle">Page Editor</h3>
+			<p class="footer-links">
+				<a href="cv_gibran_kasif.html">Gibran Kasif </a>
+			</p>	
+	</div>
+
+	<div class="footer-middle_01">
+		<h3 class ="footerTitle">Team Members</h3>	
+			<p class="footer-links">Maneesha Walisundara </p>
+			<p class="footer-links">Gibran Kasif </p>
+			<p class="footer-links">Thiviru Perera</p>
+			<p class="footer-links">S.C Fernando </p>
+	</div>
+
+	<div class="footer-middle_02">
+		<h3 class ="footerTitle">Quick Links</h3>
+			<p class="footer-links">	
+				<a href="store.html">Store</a>
+			</p>
+
+			<p class="footer-links">	
+				<a href="quiz.html">Quiz</a>
+			</p>
+
+			<p class="footer-links">	
+				<a href="questionnare.html">Questionnaire</a>
+			</p>
+
+			<p class="footer-links">
+				<a href="mysvg.html">Sitemap</a>
+			</p>
+
+			<p class="footer-links">
+				<a href="students.html">Member Roles</a>
+			</p>
+
+	</div>
+
+
+	<div class="footer-right">
+		<h3 class ="footerTitle">Contact</h3>
+			<p class="footer-links">	
+				<a href="form.html">Contact Us</a>
+			</p>
+
+	</div>
+
+</footer>
+
+<!--////////////////////////////////////////////  END---   FOOTER NAVIGATION ---END    ///////////////////////////////////////////////////////////////// -->
+
+</html>

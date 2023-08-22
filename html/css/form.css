@@ -1,0 +1,142 @@
+
+body{
+font-family:'Courier New';
+}
+.form-container{
+	width:910px;
+	height:850px;
+	margin:30px auto;
+	align-items: center;
+}
+.form-subcontainer{
+	margin-left:140px; 
+	width: 550px;
+	height: 840px;
+	box-shadow:0 0 0 1px rgba(14,41,57,0.12),0 2px 5px rgba(14,41,57,0.44),inset 0 -1px 2px rgba(14,41,57,0.15);
+	float: left;
+	padding:10px 50px 0;
+	background:linear-gradient(#fff,#DFDFDF)
+}
+hr{
+	border:0;
+	border-top:1px solid #ccc;
+	margin-bottom:30px
+}
+label {
+font-size:18px;
+}
+.formInput{
+	width:500px;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:35px;
+	border-radius:5px;
+	border:1px solid #cbcbcb;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,0.18);
+	font-size:16px
+}
+textarea{
+	width:500px;
+	height:100px;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:35px;
+	border-radius:5px;
+	border:1px solid #cbcbcb;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,0.18);
+	font-size:16px
+}
+
+#formSubmit{
+	outline: none;
+	background:linear-gradient(to bottom,#323232 5%,#0f0f0f 100%);
+	box-shadow:inset 0 1px 0 0 #FFFFFF;
+	border:1px solid #0F799E;
+	border-radius:80px; 
+	color:#BBFFFF;
+	font-family: 'Montserrat';
+	font-family: inherit;
+	font-size:19px;
+	font-weight:700;
+	cursor:pointer;
+	text-shadow:0 1px 0 #13506D;	
+}
+
+#formSubmit:hover {
+background:linear-gradient(to bottom,#1c1c1c 5%,#212121 100%)
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.ratingLabel {
+	margin-top: -05px;
+	font-size: 18px;
+
+}
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  /* width: 250px; remove this */
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: url(../form_images/star.svg);
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  /* width: 20%; remove this */
+  z-index: 1;
+background: url(../form_images/starselect.svg);
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  /* width: 20%; remove this */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+::after,
+::before {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.star-rating.star-5 {width: 250px;}
+.star-rating.star-5 input,
+.star-rating.star-5 i {width: 20%;}
+.star-rating.star-5 i ~ i {width: 40%;}
+.star-rating.star-5 i ~ i ~ i {width: 60%;}
+.star-rating.star-5 i ~ i ~ i ~ i {width: 80%;}
+.star-rating.star-5 i ~ i ~ i ~ i ~i {width: 100%;}
